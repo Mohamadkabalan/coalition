@@ -83,6 +83,12 @@ return [
     'cipher' => 'AES-256-CBC',
 
     /*
+    | Email address of the administrator (used by the admin route filter).
+    */
+
+    'admin_email' => env('ADMIN_EMAIL'),
+
+    /*
     |--------------------------------------------------------------------------
     | Logging Configuration
     |--------------------------------------------------------------------------

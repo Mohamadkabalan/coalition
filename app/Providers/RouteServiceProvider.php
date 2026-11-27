@@ -58,7 +58,7 @@ class RouteServiceProvider extends ServiceProvider
         {
         	if (Auth::check())
         	{
-        		if (Auth::user()->email != "admin@example.com")
+        		if (Auth::user()->email !== config('app.admin_email'))
         		{
         			return Redirect::to('/');
         		}
